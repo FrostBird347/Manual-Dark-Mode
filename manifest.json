@@ -16,7 +16,7 @@
     "persistent": false,
     "scripts" : ["content.js"]
 },
-      "version": "0.9.8.5",
+      "version": "0.9.8.6",
       "version_name": "0.9.8 - Update Notification Update",
     "icons": { "16": "icon/icon16.png",
            "48": "icon/icon48.png",
