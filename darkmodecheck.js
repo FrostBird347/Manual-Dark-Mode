@@ -1,18 +1,14 @@
 function checkdark() {
 
-if (document.documentElement.id != "DarkModeOnFrostBird347") {
-
-    return false
-
-} else {
-
-    return true
+    if (document.documentElement.id != "DarkModeOnFrostBird347") {
+        return false
+    } else {
+        return true
+    }
 
 }
 
-}
-
-return checkdark() 
+return checkdark()
 
 
 
