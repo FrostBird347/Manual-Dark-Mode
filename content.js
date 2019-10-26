@@ -11,7 +11,7 @@ chrome.browserAction.onClicked.addListener(function(tab) {
 });
 
 
-
+chrome.runtime.requestUpdateCheck(function() {});
 
 chrome.storage.local.get(['lastVtext'], function(lastVtext) {
 
