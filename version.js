@@ -120,16 +120,8 @@ chrome.runtime.requestUpdateCheck(function(status) {
     console.log("Checking update...");
   if (status == "update_available") {
     console.log("Update available...");
-  } else if (status == "no_update") {
-    console.log("No update found.");
-  } else if (status == "throttled") {
-    console.log("Throttled.");
-  }
-});
-
-chrome.runtime.onUpdateAvailable.addListener(function(details) {
-  console.log("New update:  " + details.version);
-   var versiontext = 'New update detected: ' + details.version + '\n Update will be installed after browser restart.'
+      console.log("New update:  " + details.version);
+   var versiontext = 'New update detected: ' + details.version + '\nUpdate will be installed after browser restart.'
 
                 var options = {
                     "type": "basic",
@@ -140,7 +132,11 @@ chrome.runtime.onUpdateAvailable.addListener(function(details) {
                 };
 
                 chrome.notifications.create(options);
-  
-  
+  } else if (status == "no_update") {
+    console.log("No update found.");
+  } else if (status == "throttled") {
+    console.log("Throttled.");
+  }
 });
+
 
