@@ -16,7 +16,7 @@
     "persistent": false,
     "scripts" : ["content.js"]
 },
-      "version": "0.9.9.2",
+      "version": "0.9.9.3",
       "version_name": "0.9.9 - Logo Update",
     "icons": { "16": "icon/icon16.png",
            "48": "icon/icon48.png",

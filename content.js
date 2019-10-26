@@ -1,16 +1,3 @@
-chrome.browserAction.onClicked.addListener(function(tab) {
-    chrome.tabs.executeScript(null, {
-        file: "darkmode.js"
-    }, function(isdark) {
-
-
-
-    })
-
-
-});
-
-
 chrome.runtime.requestUpdateCheck(function() {});
 
 chrome.storage.local.get(['lastVtext'], function(lastVtext) {
@@ -129,6 +116,20 @@ chrome.storage.local.get(['lastVtext'], function(lastVtext) {
 
 
 })
+
+
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+    chrome.tabs.executeScript(null, {
+        file: "darkmode.js"
+    }, function(isdark) {
+
+
+
+    })
+
+
+});
 
 
 
