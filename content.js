@@ -56,7 +56,7 @@ chrome.storage.local.get(['lastVtext'], function(lastVtext) {
 
             var options = {
                 "type": "basic",
-                "iconUrl": chrome.extension.getURL("icon192.png"),
+                "iconUrl": chrome.extension.getURL("icon/icon192.png"),
                 "title": 'Manual Dark Mode Installed',
                 "message": versiontext
 
@@ -80,7 +80,7 @@ chrome.storage.local.get(['lastVtext'], function(lastVtext) {
 
                 var options = {
                     "type": "basic",
-                    "iconUrl": chrome.extension.getURL("icon192.png"),
+                    "iconUrl": chrome.extension.getURL("icon/icon192.png"),
                     "title": 'Manual Dark Mode Updated',
                     "message": versiontext
 
@@ -96,7 +96,7 @@ chrome.storage.local.get(['lastVtext'], function(lastVtext) {
 
                 var options = {
                     "type": "basic",
-                    "iconUrl": chrome.extension.getURL("icon192.png"),
+                    "iconUrl": chrome.extension.getURL("icon/icon192.png"),
                     "title": 'Manual Dark Mode Updated',
                     "message": versiontext
 

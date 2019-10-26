@@ -4,7 +4,7 @@ A simple chrome extension that inverts and changes the hue of the current page.
 
 ## Installation
 
-- [Download the latest release](https://github.com/FrostBird347/Manual-Dark-Mode/releases)
+- [Download the latest release](https://github.com/FrostBird347/Manual-Dark-Mode/releases/latest)
 - Download and extract the zip
 - Go to chrome://extensions/
 - Drag the .crx file into the window
@@ -20,10 +20,12 @@ and sets the id to certain value. If it matches the value, it removes the style 
 ## FAQ
 
 - **Q:**  Nothing is happening! 
- - **A:** Try clicking the extension's icon, if that does not work, please submit an issue. 
+- **A:** Try clicking the extension's icon, if that does not work, please submit an issue. 
+
  <br>
-- Q: There has not been any update notifications
- - A: Go to chrome://extensions/ and check the version of the extension by enabling developer mode. If it is not up to date, try clicking the update button. If it still does not update, please submit an issue.
+ 
+- **Q:** There has not been any update notifications
+- **A:** Go to chrome://extensions/ and check the version of the extension by enabling developer mode. If it is not up to date, try clicking the update button. If it still does not update, please submit an issue.
 
 ----
  
