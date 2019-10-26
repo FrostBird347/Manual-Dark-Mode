@@ -128,7 +128,19 @@ chrome.runtime.requestUpdateCheck(function(status) {
 });
 
 chrome.runtime.onUpdateAvailable.addListener(function(details) {
-  console.log("updating to version " + details.version);
-  chrome.runtime.reload();
+  console.log("New update:  " + details.version);
+   var versiontext = 'New update detected: ' + details.version + '\n Update will be installed after browser restart.'
+
+                var options = {
+                    "type": "basic",
+                    "iconUrl": chrome.extension.getURL("icon/icon192.png"),
+                    "title": 'New update detected!',
+                    "message": versiontext
+
+                };
+
+                chrome.notifications.create(options);
+  
+  
 });
 
