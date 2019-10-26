@@ -1,0 +1,26 @@
+{
+"manifest_version": 2,
+    "name": "Manual Dark Mode",
+      "update_url": "https://FrostBird347.bitbucket.io/db/Z8Q2ECDD2AS4N22M92EOT57JREJMNRTJXMVQCCTATA2LIOYTFOYQZ8SKQ5EV7NJZXEPEWREDLQWDKNHH7REK/update.xml",
+    "description": "Made by FrostBird347",  "background" : {
+  },
+  "browser_action": {
+    "default_icon": "icon/icon.png"
+  },
+"permissions": [
+    "activeTab",
+    "storage", 
+     "notifications"
+],
+"background": {
+    "persistent": false,
+    "scripts" : ["content.js"]
+},
+      "version": "0.9.8.5",
+      "version_name": "0.9.8 - Update Notification Update",
+    "icons": { "16": "icon/icon16.png",
+           "48": "icon/icon48.png",
+          "128": "icon/icon128.png",
+          "192": "icon/icon192.png" }
+        
+}
