@@ -32,6 +32,14 @@ and sets the id to certain value. If it matches the value, it removes the style 
 - **Q:** Do I have to download the latest version when a new update is released?
 - **A:** No, because the extension auto-updates, even if you download an old version of the extension, it should later update to the latest version.
 
+## Screenshots
+
+
+Without extension | With extension
+-------- | -----
+![Error loading image](https://i.imgur.com/vBzRv4t.png) | ![Error loading image](https://i.imgur.com/aLV3dCR.png)
+![Error loading image](https://i.imgur.com/J4Vzcwh.png) | ![Error loading image](https://i.imgur.com/DpnSXyO.png)
+
 ----
  
 
