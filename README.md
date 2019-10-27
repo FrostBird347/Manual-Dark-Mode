@@ -1,4 +1,4 @@
-# **Manual-Dark-Mode**
+﻿# **Manual-Dark-Mode**
 
 A simple chrome extension that inverts and changes the hue of the current page.
 
@@ -26,6 +26,11 @@ and sets the id to certain value. If it matches the value, it removes the style 
  
 - **Q:** There has not been any update notifications
 - **A:** Go to chrome://extensions/ and check the version of the extension by enabling developer mode. If it is not up to date, try clicking the update button. If it still does not update, please submit an issue.
+
+ <br>
+ 
+- **Q:** Do I have to download the latest version when a new update is released?
+- **A:** No, because the extension auto-updates, even if you download an old version of the extension, it should later update to the latest version.
 
 ----
  
