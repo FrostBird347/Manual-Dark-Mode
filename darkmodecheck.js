@@ -1,14 +1,14 @@
 function checkdark() {
 
     if (document.documentElement.id != "DarkModeOnFrostBird347") {
-        return false
+    chrome.runtime.sendMessage({action: 'isdark', value: false});
     } else {
-        return true
+    chrome.runtime.sendMessage({action: 'isdark', value: true});
     }
 
 }
 
-return checkdark()
+checkdark()
 
 
 

@@ -12,6 +12,10 @@ function dark() {
     document.documentElement.style.background = thing3;
     document.documentElement.id = "DarkModeOnFrostBird347";
     console.log("Dark Mode Activated");
+    chrome.runtime.sendMessage({
+    action: 'isdark',
+    value: true
+});
 }
 
 
@@ -22,6 +26,10 @@ function normal() {
     document.documentElement.style.background = thing4;
     document.documentElement.id = "DarkModeOffFrostBird347";
     console.log("Dark Mode Deactivated");
+    chrome.runtime.sendMessage({
+    action: 'isdark',
+    value: false
+});
 }
 
 // Made by FrostBird347
