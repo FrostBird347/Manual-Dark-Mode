@@ -49,7 +49,7 @@ chrome.storage.local.get( [ 'lastVtext' ], function ( lastVtext ) { /* Get saved
 			}, function () {} )
 
 			var versiontext = 'Current Version: ' + CversionName
-			var options = notifyopt( 'Manual Dark Mode Installed', versiontext ) { /* Create notification with the current version name */
+			var options = notifyopt( 'Manual Dark Mode Installed', versiontext ) /* Create notification with the current version name */
 			chrome.notifications.create( options ); /* Display notification */
 
 		} else if ( Cversion != lastV.lastV.toString() ) { /* If current version number is not the same as the saved version number */
