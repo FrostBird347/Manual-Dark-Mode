@@ -32,6 +32,11 @@ and sets the id to certain value. If it matches the value, it removes the style 
 - **Q:** Do I have to download the latest version when a new update is released?
 - **A:** No, because the extension auto-updates, even if you download an old version of the extension, it should later update to the latest version.
 
+ <br>
+ 
+- **Q:** The extension needs permission to "Read my browsing history".
+- **A:** To change the icon, the content script (that inverts the page and checks if the page is already inverted) needs to be able to communicate directly with the extension. The "Tabs" permission needs to be enabled to allow this. I am currently trying to find another way that does not require the permission.
+
 ## Screenshots
 
 
