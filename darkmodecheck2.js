@@ -1,3 +1,14 @@
+  function loop() {
+    setTimeout(function () {
+	if (document.hasFocus()) {
+        checkdark();
+        }
+        loop();
+    }, 500);
+}
+
+
+
 function checkdark() {
 
     if (document.documentElement.id != "DarkModeOnFrostBird347") {
@@ -17,16 +28,17 @@ window.onfocus = function() {
 window.onblur = function() {
 try {
     chrome.runtime.sendMessage({action: 'isdark', value: false});
+	checkdark()
     focused = false;
     
     }
     catch {
-    console.debug("error changing icon...")
+    console.debug("Error changing icon... Reload page?")
     }
 };
 
 
 
-
+loop()
 
 // Made by FrostBird347

@@ -8,6 +8,20 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     }
 });
 
+
+chrome.tabs.onRemoved.addListener(function(tabid, removed) {
+    chrome.tabs.executeScript(null, {
+        file: "darkmodecheck.js"
+    }, function(isdark) {})
+})
+
+chrome.windows.onRemoved.addListener(function(windowid) {
+    chrome.tabs.executeScript(null, {
+        file: "darkmodecheck.js"
+    }, function(isdark) {})
+})
+
+
 chrome.browserAction.onClicked.addListener(function(tab) {
     chrome.tabs.executeScript(null, {
         file: "darkmode.js"
